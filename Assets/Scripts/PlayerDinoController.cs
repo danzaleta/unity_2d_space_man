@@ -32,7 +32,7 @@ public class PlayerDinoController : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
         {
             Jump();
         }
@@ -43,9 +43,16 @@ public class PlayerDinoController : MonoBehaviour
     //
     void FixedUpdate()
     {
-        if (rb.velocity.x < runningSpeed)
+        if (GameManager.gameManagerInstance.currentGameState == GameState.InGame)
         {
-            rb.velocity = new Vector2(runningSpeed, rb.velocity.y);
+            if (rb.velocity.x < runningSpeed)
+            {
+                rb.velocity = new Vector2(runningSpeed, rb.velocity.y);
+            }
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
 

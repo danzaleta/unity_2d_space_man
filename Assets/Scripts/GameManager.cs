@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gameManagerInstance;
 
-    [SerializeField] public GameState currentGameState = GameState.Menu;
+    public GameState currentGameState = GameState.Menu;
 
 
 
@@ -30,6 +30,13 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        if (currentGameState != GameState.InGame)
+        {
+            if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
+            {
+                StartGame();
+            }
+        }
         
     }
 
@@ -39,17 +46,17 @@ public class GameManager : MonoBehaviour
     //
     public void StartGame()
     { 
-        
+        SetGameState(GameState.InGame);
     }
     //
     public void GameOver()
-    { 
-        
+    {
+        SetGameState(GameState.GameOver);
     }
     //
     public void BackToMenu()
-    { 
-        
+    {
+        SetGameState(GameState.Menu);
     }
     //
     // Game state methods
