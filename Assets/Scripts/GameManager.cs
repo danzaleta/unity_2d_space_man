@@ -3,77 +3,81 @@ using System.Collections.Generic;
 using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
 
-public enum GameState
-{
-    menu,
-    inGame,
-    gameOver
-}
-
 public class GameManager : MonoBehaviour
 {
+    public static GameManager gameManagerInstance;
 
-    public GameState currentGameState = GameState.menu;
+    [SerializeField] public GameState currentGameState = GameState.Menu;
 
-    public static GameManager sharedInstance;
 
-    private PlayerController controller;
-
-    // Start is called before the first frame update
 
     void Awake()
     {
-        if(sharedInstance == null)
+        if (gameManagerInstance == null)
         {
-            sharedInstance = this;
+            gameManagerInstance = this;
+        }
+        else
+        {
+            Destroy(this);
         }
     }
-
+    //
     void Start()
     {
-        controller = GameObject.Find("Player").GetComponent<PlayerController>();
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Submit") && currentGameState != GameState.inGame)
-        {
-            StartGame();
-        }
+        
     }
 
+
+
+    // Game state methods
+    //
     public void StartGame()
-    {
-        SetGameState(GameState.inGame);
+    { 
+        
     }
-
+    //
     public void GameOver()
-    {
-        SetGameState(GameState.gameOver);
+    { 
+        
     }
-
+    //
     public void BackToMenu()
-    {
-        SetGameState(GameState.menu);
+    { 
+        
     }
+    //
+    // Game state methods
+
+
 
     private void SetGameState(GameState newGameState)
     {
-        if(newGameState == GameState.menu)
+        switch (newGameState)
         {
+            case GameState.Menu:
 
+                break;
+            
+            case GameState.InGame:
+                
+                break;
+            
+            case GameState.GameOver:
+                
+                break;
+            
+            default:
+                
+                break;
         }
-        else if(newGameState == GameState.inGame)
-        {
-            controller.StartGame();
-        }
-        else if(newGameState == GameState.gameOver)
-        {
 
-        }
-
-        this.currentGameState = newGameState;
+        currentGameState = newGameState;
     }
 
 }

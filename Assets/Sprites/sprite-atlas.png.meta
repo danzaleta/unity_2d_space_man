@@ -40,94 +40,94 @@ TextureImporter:
     second: sprite-atlas_11
   - first:
       213: -6532936183452039368
-    second: sprite-atlas_12
+    second: jump_1
   - first:
       213: 2251302966545850319
-    second: sprite-atlas_13
+    second: jump_2
   - first:
       213: -2044322936661462846
-    second: sprite-atlas_14
+    second: jump_3
   - first:
       213: -3320761448351302060
-    second: sprite-atlas_15
+    second: jump_4
   - first:
       213: -1314051821937120660
-    second: sprite-atlas_16
+    second: rocket_1
   - first:
       213: -6507834598064329317
     second: sprite-atlas_17
   - first:
       213: 2690067164458890340
-    second: sprite-atlas_18
+    second: walk_1
   - first:
       213: 6882153906056439007
-    second: sprite-atlas_19
+    second: walk_2
   - first:
       213: -3070488266922594726
-    second: sprite-atlas_20
+    second: walk_3
   - first:
       213: 8380528411449912521
-    second: sprite-atlas_21
+    second: walk_4
   - first:
       213: 7553590309420887193
-    second: sprite-atlas_22
+    second: walk_5
   - first:
       213: -7620621983777257372
-    second: sprite-atlas_23
+    second: rock_3
   - first:
       213: 5679897224089034818
-    second: sprite-atlas_24
+    second: rocket_2
   - first:
       213: -8478384153241947502
-    second: sprite-atlas_25
+    second: rocket_3
   - first:
       213: 5730543314716996643
-    second: sprite-atlas_26
+    second: coin_1
   - first:
       213: 475761587024849807
-    second: sprite-atlas_27
+    second: coin_2
   - first:
       213: 8213436168483836213
-    second: sprite-atlas_28
+    second: coin_3
   - first:
       213: -2732776370844396811
-    second: sprite-atlas_29
+    second: coin_4
   - first:
       213: -4449733889991448787
-    second: sprite-atlas_30
+    second: coin_5
   - first:
       213: 6524552276886044749
-    second: sprite-atlas_31
+    second: coin_6
   - first:
       213: 6722007544017516588
-    second: sprite-atlas_32
+    second: coin_7
   - first:
       213: 5704764885748256050
-    second: sprite-atlas_33
+    second: coin_8
   - first:
       213: -2549273120127555650
-    second: sprite-atlas_34
+    second: poison
   - first:
       213: -3532133655125953119
-    second: sprite-atlas_35
+    second: rock_1
   - first:
       213: 6691287902862017832
-    second: sprite-atlas_36
+    second: rock_2
   - first:
       213: 4157115847226850640
-    second: sprite-atlas_37
+    second: background
   - first:
       213: 2758995749061410447
-    second: sprite-atlas_38
+    second: floor_2
   - first:
       213: -1210262882860465325
-    second: sprite-atlas_39
+    second: floor_3
   - first:
       213: 9179272126259092667
-    second: sprite-atlas_40
+    second: floor_4
   - first:
       213: 7668746392148799563
-    second: sprite-atlas_41
+    second: floor_1
   - first:
       213: -4071045089559465288
     second: sprite-atlas_42
@@ -136,10 +136,10 @@ TextureImporter:
     second: sprite-atlas_0
   - first:
       213: 4760705911062830648
-    second: sprite-atlas_1
+    second: dead_1
   - first:
       213: -7184088057829267375
-    second: sprite-atlas_2
+    second: dead_2
   - first:
       213: -5848084874835906468
     second: sprite-atlas_3
@@ -148,7 +148,7 @@ TextureImporter:
     second: sprite-atlas_4
   - first:
       213: 206513735545042235
-    second: sprite-atlas_5
+    second: dead_3
   - first:
       213: -3279413826372779711
     second: sprite-atlas_6
@@ -169,94 +169,94 @@ TextureImporter:
     second: sprite-atlas_11
   - first:
       213: 4448969672427584354
-    second: sprite-atlas_12
+    second: jump_1
   - first:
       213: -5053709400431805757
-    second: sprite-atlas_13
+    second: jump_2
   - first:
       213: -1687820468912514229
-    second: sprite-atlas_14
+    second: jump_3
   - first:
       213: -4761363505723394764
-    second: sprite-atlas_15
+    second: jump_4
   - first:
       213: -5655662954014414781
-    second: sprite-atlas_16
+    second: rocket_1
   - first:
       213: -3115744288690136550
     second: sprite-atlas_17
   - first:
       213: -2296308621174847270
-    second: sprite-atlas_18
+    second: walk_1
   - first:
       213: 4094054853297773910
-    second: sprite-atlas_19
+    second: walk_2
   - first:
       213: -8415123357174425980
-    second: sprite-atlas_20
+    second: walk_3
   - first:
       213: 8754603057039582578
-    second: sprite-atlas_21
+    second: walk_4
   - first:
       213: 4508657747011770245
-    second: sprite-atlas_22
+    second: walk_5
   - first:
       213: 9151768383050802361
-    second: sprite-atlas_23
+    second: rock_3
   - first:
       213: 5804121470200747168
-    second: sprite-atlas_24
+    second: rocket_2
   - first:
       213: -8389736259966139460
-    second: sprite-atlas_25
+    second: rocket_3
   - first:
       213: 4351130242830090303
-    second: sprite-atlas_26
+    second: coin_1
   - first:
       213: -606237858986827446
-    second: sprite-atlas_27
+    second: coin_2
   - first:
       213: -8108314367244846577
-    second: sprite-atlas_28
+    second: coin_3
   - first:
       213: 3604876341480583310
-    second: sprite-atlas_29
+    second: coin_4
   - first:
       213: 3922290586464846454
-    second: sprite-atlas_30
+    second: coin_5
   - first:
       213: 7546381471971567433
-    second: sprite-atlas_31
+    second: coin_6
   - first:
       213: -1238018967271477874
-    second: sprite-atlas_32
+    second: coin_7
   - first:
       213: -6279425693254702437
-    second: sprite-atlas_33
+    second: coin_8
   - first:
       213: 2666218864367768625
-    second: sprite-atlas_34
+    second: poison
   - first:
       213: -2369910959881851990
-    second: sprite-atlas_35
+    second: rock_1
   - first:
       213: -3741000904719539863
-    second: sprite-atlas_36
+    second: rock_2
   - first:
       213: -1918832684476862036
-    second: sprite-atlas_37
+    second: background
   - first:
       213: 1695352365023611134
-    second: sprite-atlas_38
+    second: floor_2
   - first:
       213: -1802149014575749535
-    second: sprite-atlas_39
+    second: floor_3
   - first:
       213: 1702077283222788381
-    second: sprite-atlas_40
+    second: floor_4
   - first:
       213: 358378145670555873
-    second: sprite-atlas_41
+    second: floor_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -278,6 +278,7 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -286,9 +287,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -309,9 +310,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -362,6 +366,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -387,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_1
+      name: dead_1
       rect:
         serializedVersion: 2
         x: 218
@@ -408,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_2
+      name: dead_2
       rect:
         serializedVersion: 2
         x: 448
@@ -471,7 +487,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_5
+      name: dead_3
       rect:
         serializedVersion: 2
         x: 783
@@ -618,7 +634,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_12
+      name: jump_1
       rect:
         serializedVersion: 2
         x: 605
@@ -639,11 +655,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_13
+      name: jump_2
       rect:
         serializedVersion: 2
         x: 818
-        y: 2052
+        y: 2055
         width: 169
         height: 300
       alignment: 0
@@ -660,7 +676,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_14
+      name: jump_3
       rect:
         serializedVersion: 2
         x: 1050
@@ -681,7 +697,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_15
+      name: jump_4
       rect:
         serializedVersion: 2
         x: 1246
@@ -702,7 +718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_16
+      name: rocket_1
       rect:
         serializedVersion: 2
         x: 1531
@@ -744,7 +760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_18
+      name: walk_1
       rect:
         serializedVersion: 2
         x: 85
@@ -765,7 +781,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_19
+      name: walk_2
       rect:
         serializedVersion: 2
         x: 349
@@ -786,7 +802,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_20
+      name: walk_3
       rect:
         serializedVersion: 2
         x: 548
@@ -807,7 +823,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_21
+      name: walk_4
       rect:
         serializedVersion: 2
         x: 759
@@ -828,7 +844,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_22
+      name: walk_5
       rect:
         serializedVersion: 2
         x: 952
@@ -849,7 +865,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_23
+      name: rock_3
       rect:
         serializedVersion: 2
         x: 1334
@@ -870,7 +886,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_24
+      name: rocket_2
       rect:
         serializedVersion: 2
         x: 1531
@@ -891,7 +907,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_25
+      name: rocket_3
       rect:
         serializedVersion: 2
         x: 1531
@@ -912,7 +928,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_26
+      name: coin_1
       rect:
         serializedVersion: 2
         x: 92
@@ -933,7 +949,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_27
+      name: coin_2
       rect:
         serializedVersion: 2
         x: 242
@@ -954,7 +970,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_28
+      name: coin_3
       rect:
         serializedVersion: 2
         x: 388
@@ -975,7 +991,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_29
+      name: coin_4
       rect:
         serializedVersion: 2
         x: 534
@@ -996,7 +1012,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_30
+      name: coin_5
       rect:
         serializedVersion: 2
         x: 693
@@ -1017,7 +1033,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_31
+      name: coin_6
       rect:
         serializedVersion: 2
         x: 780
@@ -1038,7 +1054,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_32
+      name: coin_7
       rect:
         serializedVersion: 2
         x: 900
@@ -1059,7 +1075,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_33
+      name: coin_8
       rect:
         serializedVersion: 2
         x: 1025
@@ -1080,7 +1096,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_34
+      name: poison
       rect:
         serializedVersion: 2
         x: 1201
@@ -1101,7 +1117,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_35
+      name: rock_1
       rect:
         serializedVersion: 2
         x: 1324
@@ -1122,7 +1138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_36
+      name: rock_2
       rect:
         serializedVersion: 2
         x: 1441
@@ -1143,7 +1159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_37
+      name: background
       rect:
         serializedVersion: 2
         x: 80
@@ -1164,7 +1180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_38
+      name: floor_2
       rect:
         serializedVersion: 2
         x: 91
@@ -1185,7 +1201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_39
+      name: floor_3
       rect:
         serializedVersion: 2
         x: 707
@@ -1206,7 +1222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_40
+      name: floor_4
       rect:
         serializedVersion: 2
         x: 1158
@@ -1227,7 +1243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_41
+      name: floor_1
       rect:
         serializedVersion: 2
         x: 92

@@ -4,41 +4,32 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public LayerMask groundMask; // Variable para guardar capas declaradas en el juego
-    //
-    //
-    //
-    public float jumpForce = 10f;    // Fuerza de salto
-    public float runningSpeed = 1f; // Velocidad al correr
-    //
-    //
-    //
+    [SerializeField] private LayerMask groundMask; // Variable para guardar capas declaradas en el juego
+    
+    [SerializeField] private float jumpForce = 10f;    // Fuerza de salto
+    [SerializeField] private float runningSpeed = 1f; // Velocidad al correr
+    
     Rigidbody2D playerRb;    // Declaramos el rigidbody del objeto
     Animator playerAnim;    // Declaramos el animator del objeto
-    Vector3 startPosition; // 
-    //
-    //
+    Vector3 startPosition;  // 
+    
     // Variables de condicion de animacion (las mayusculas
     // es un estandar heredado de C para declarar constantes)
     private const string STATE_ALIVE = "isAlive";                //Variable para saber si estoy vivo
     private const string STATE_ON_THE_GROUND = "isOnTheGround"; //Variable para saber si estoy en el suelo
-    //
-    //
+    
     // Es buena practica cargar componentes en el metodo Awake
     private void Awake()
     {
         playerRb = GetComponent<Rigidbody2D>(); // Cargamos el componente rigidbody del objeto.
         playerAnim = GetComponent<Animator>(); // Cargamos el componente de animación el objeto.
     }
-    //
-    //
-    //
+    
     void Start()
     {
         startPosition = this.transform.position;
     }
-    //
-    //
+    
     // Logica donde ejecutamos el inicio del juego (se llama desde otro script)
     public void StartGame()
     {
@@ -47,17 +38,13 @@ public class PlayerController : MonoBehaviour
         
         Invoke("RestartPosition", 0.3f);
     }
-    //
-    //
-    //
+    
     void RestartPosition()
     {
         this.transform.position = startPosition;
         this.playerRb.velocity = Vector2.zero;
     }
-    //
-    //
-    //
+    
     void Update()
     {
         // Si presionamos la tecla declarada
@@ -73,12 +60,11 @@ public class PlayerController : MonoBehaviour
         // #DEBUG#: Dibujamos un rayo desde el centro del objeto hacia abajo
         Debug.DrawRay(this.transform.position, Vector2.down * 1.5f, Color.red);
     }
-    //
-    //
+    
     // Todo lo que tiene que ver con fisicas es recomendable que vaya en este metodo porque es mas constante que Update
     private void FixedUpdate()
     {
-        if(GameManager.sharedInstance.currentGameState == GameState.inGame)
+        if(GameManager.gameManagerInstance.currentGameState == GameState.InGame)
         {
             if (playerRb.velocity.x < runningSpeed)
             {
@@ -90,12 +76,11 @@ public class PlayerController : MonoBehaviour
             playerRb.velocity = new Vector2(0, playerRb.velocity.y);
         }
     }
-    //
-    //
+    
     // Lógica para saltar
     void Jump()
     {
-        if(GameManager.sharedInstance.currentGameState == GameState.inGame)
+        if(GameManager.gameManagerInstance.currentGameState == GameState.InGame)
         {
             // Si el metodo retorna verdadero...
             if (IsTouchingTheGround())
@@ -105,8 +90,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    //
-    //
+    
     // Lógica para saber si el Player está o no tocando el suelo
     bool IsTouchingTheGround()
     {
@@ -123,12 +107,10 @@ public class PlayerController : MonoBehaviour
             return false;
         }
     }
-    //
-    //
-    //
+  
     public void Die()
     {
         this.playerAnim.SetBool(STATE_ALIVE, false);
-        GameManager.sharedInstance.GameOver();
+        GameManager.gameManagerInstance.GameOver();
     }
 }
