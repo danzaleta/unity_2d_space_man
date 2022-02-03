@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 8506645096123392594}
   - component: {fileID: 5056967550101779422}
   - component: {fileID: 9013823692338557713}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerDino
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

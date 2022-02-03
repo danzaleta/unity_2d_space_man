@@ -32,11 +32,15 @@ public class PlayerDinoController : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
+        if (GameManager.gameManagerInstance.currentGameState == GameState.InGame)
         {
-            Jump();
+            if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
+            {
+                Jump();
+            }
+            animator.SetBool(STATE_GROUNDED, isGrounded());
         }
-        animator.SetBool(STATE_GROUNDED, isGrounded());
+        
 
         Debug.DrawRay(this.transform.position, Vector2.down*0.5f, Color.red);
     }
@@ -76,5 +80,13 @@ public class PlayerDinoController : MonoBehaviour
         {
             return false;
         }
+    }
+
+    public void Die()
+    {
+        this.animator.SetBool(STATE_ALIVE, false);
+        rb.AddForce(Vector2.up * 5.5f, ForceMode2D.Impulse);
+
+        GameManager.gameManagerInstance.GameOver();
     }
 }

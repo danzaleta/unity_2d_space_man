@@ -1,6 +1,7 @@
 # **Dino Run**
 
-![image](https://user-images.githubusercontent.com/48734867/152020093-5fde6766-d0bf-434a-82f4-49cfb3d30617.png)
+![HeaderGif](https://user-images.githubusercontent.com/48734867/152393007-860cab85-b6b4-4119-852e-f41d42612d8a.gif)
+
 ### **[ WORK IN PROGRESS ]**
 ## A horizontal scroll runner game
 ---
