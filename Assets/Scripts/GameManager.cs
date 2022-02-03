@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor.U2D.Path.GUIFramework;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (currentGameState != GameState.InGame)
+        if (currentGameState == GameState.Menu)
         {
             if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
             {
@@ -57,6 +58,11 @@ public class GameManager : MonoBehaviour
     public void BackToMenu()
     {
         SetGameState(GameState.Menu);
+    }
+    //
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     //
     // Game state methods

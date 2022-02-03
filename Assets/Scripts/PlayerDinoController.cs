@@ -17,6 +17,8 @@ public class PlayerDinoController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
 
+    // Utilities
+    Vector2 startPosition;
 
     void Awake()
     {
@@ -28,6 +30,8 @@ public class PlayerDinoController : MonoBehaviour
     {
         animator.SetBool(STATE_ALIVE, true);
         animator.SetBool(STATE_GROUNDED, true);
+
+        startPosition = this.transform.position;
     }
     
     void Update()
@@ -59,6 +63,7 @@ public class PlayerDinoController : MonoBehaviour
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
     }
+
 
 
     void Jump()

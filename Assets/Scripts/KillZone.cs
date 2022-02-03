@@ -14,5 +14,10 @@ public class KillZone : MonoBehaviour
                 controller.Die();
             }
         }
+        else
+        {
+            Destroy(collision.gameObject);
+            GameManager.gameManagerInstance.RestartGame();
+        }
     }
 }
