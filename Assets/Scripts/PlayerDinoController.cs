@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerDinoController : MonoBehaviour
 {
     // Animator states
-    const string STATE_ALIVE = "isAlive";
-    const string STATE_GROUNDED = "isGrounded";
+    const string STATE_ALIVE = "isAlive",
+                     STATE_GROUNDED = "isGrounded";
 
     // Paramethers
-    [SerializeField] float jumpForce = 2.0f;
-    [SerializeField] float runningSpeed = 2.0f;
     [SerializeField] LayerMask groundLayer;
+    [SerializeField] float  jumpForce = 2.3f,
+                               runningSpeed = 3.0f;
 
     // Components
     Rigidbody2D rb;
@@ -19,6 +19,8 @@ public class PlayerDinoController : MonoBehaviour
 
     // Utilities
     Vector2 startPosition;
+
+
 
     void Awake()
     {
@@ -46,7 +48,7 @@ public class PlayerDinoController : MonoBehaviour
         }
         
 
-        Debug.DrawRay(this.transform.position, Vector2.down*0.5f, Color.red);
+        Debug.DrawRay(this.transform.position, Vector2.down*0.55f, Color.red);
     }
     //
     void FixedUpdate()
@@ -66,6 +68,8 @@ public class PlayerDinoController : MonoBehaviour
 
 
 
+    // Action methods
+    //
     void Jump()
     {
         if (isGrounded())
@@ -74,10 +78,22 @@ public class PlayerDinoController : MonoBehaviour
             animator.SetBool(STATE_GROUNDED, true);
         }
     }
+    //
+    public void Die()
+    {
+        this.animator.SetBool(STATE_ALIVE, false);
+        rb.AddForce(Vector2.up * 5.5f, ForceMode2D.Impulse);
+
+        GameManager.gameManagerInstance.GameOver();
+    }
+    //
+    // Action methods
+
+
 
     bool isGrounded()
     {
-        if (Physics2D.Raycast(this.transform.position, Vector2.down, 0.5f, groundLayer))
+        if (Physics2D.Raycast(this.transform.position, Vector2.down, 0.55f, groundLayer))
         {
             return true;
         }
@@ -85,13 +101,5 @@ public class PlayerDinoController : MonoBehaviour
         {
             return false;
         }
-    }
-
-    public void Die()
-    {
-        this.animator.SetBool(STATE_ALIVE, false);
-        rb.AddForce(Vector2.up * 5.5f, ForceMode2D.Impulse);
-
-        GameManager.gameManagerInstance.GameOver();
     }
 }
