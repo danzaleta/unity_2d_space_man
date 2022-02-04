@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    // Static instance
     public static GameManager gameManagerInstance;
 
     public GameState currentGameState = GameState.Menu;
