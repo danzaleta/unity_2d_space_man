@@ -64,7 +64,8 @@ public class LevelManager : MonoBehaviour
         Vector3 correction = new Vector3(
             block.transform.position.x + (block.transform.position.x - block.startPoint.position.x), 
             block.transform.position.y + (block.transform.position.y - block.startPoint.position.y),
-            0);
+            0
+        );
 
         Debug.Log("posicion del start point del bloque: " + block.startPoint.position);
 
