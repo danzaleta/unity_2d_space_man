@@ -8,7 +8,7 @@ public class KillZone : MonoBehaviour
     {
         if(GameManager.gameManagerInstance.currentGameState != GameState.GameOver)
         {
-            if (collision.tag == "Player")
+            if (collision.CompareTag("Player"))
             {
                 PlayerDinoController controller = collision.GetComponent<PlayerDinoController>();
                 controller.Die();
@@ -16,8 +16,14 @@ public class KillZone : MonoBehaviour
         }
         else
         {
-            Destroy(collision.gameObject);
-            GameManager.gameManagerInstance.RestartGame();
+            if (collision.CompareTag("Player"))
+            {
+                PlayerDinoController controller = collision.GetComponent<PlayerDinoController>();
+                controller.RestartPosition();
+            }
+            //Destroy(collision.gameObject);
+            //GameManager.gameManagerInstance.RestartGame();
+
         }
     }
 }

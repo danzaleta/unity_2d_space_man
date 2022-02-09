@@ -70,7 +70,7 @@ public class PlayerDinoController : MonoBehaviour
 
     // Action methods
     //
-    void Jump()
+    private void Jump()
     {
         if (isGrounded())
         {
@@ -85,6 +85,20 @@ public class PlayerDinoController : MonoBehaviour
         rb.AddForce(Vector2.up * 5.5f, ForceMode2D.Impulse);
 
         GameManager.gameManagerInstance.GameOver();
+    }
+    //
+    public void RestartPosition()
+    {
+        GameManager.gameManagerInstance.RestartGame();
+
+        this.transform.position = startPosition;
+        this.rb.velocity = Vector2.zero;
+
+        animator.SetBool(STATE_ALIVE, true);
+        animator.SetBool(STATE_GROUNDED, true);
+
+        GameObject mainCam = GameObject.Find("Main Camera");
+        mainCam.GetComponent<CameraFollow>().ResetCameraPosition();
     }
     //
     // Action methods

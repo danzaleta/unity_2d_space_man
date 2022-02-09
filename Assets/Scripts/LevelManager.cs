@@ -67,7 +67,7 @@ public class LevelManager : MonoBehaviour
             0
         );
 
-        Debug.Log("posicion del start point del bloque: " + block.startPoint.position);
+        //Debug.Log("posicion del start point del bloque: " + block.startPoint.position);
 
         block.transform.position = correction;
 
@@ -76,17 +76,23 @@ public class LevelManager : MonoBehaviour
     //
     public void RemoveLevelBlock()
     {
+        LevelBlock oldBlock = currentLevelBlocks[0];
 
+        currentLevelBlocks.Remove(oldBlock);
+        Destroy(oldBlock.gameObject); 
     }
     //
     public void RemoveAllLevelBlocks()
     {
-
+        while (currentLevelBlocks.Count > 0)
+        {
+            RemoveLevelBlock();
+        }
     }
     //
     public void GenerateInitialBlocks()
     {
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 3; i++)
         {
             AddLevelBlock();    
         }

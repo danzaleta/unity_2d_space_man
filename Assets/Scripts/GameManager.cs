@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (currentGameState == GameState.Menu)
+        if (currentGameState != GameState.InGame)
         {
             if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire1"))
             {
@@ -79,7 +79,10 @@ public class GameManager : MonoBehaviour
                 break;
             
             case GameState.InGame:
-                
+                //LevelManager.levelManagerInstance.RemoveAllLevelBlocks();
+                //Invoke("ReloadLevel", 0.1f);
+                //ReloadLevel();
+
                 break;
             
             case GameState.GameOver:
@@ -92,6 +95,12 @@ public class GameManager : MonoBehaviour
         }
 
         currentGameState = newGameState;
+    }
+
+    private void ReloadLevel()
+    {
+        LevelManager.levelManagerInstance.RemoveAllLevelBlocks();
+        LevelManager.levelManagerInstance.GenerateInitialBlocks();
     }
 
 }
